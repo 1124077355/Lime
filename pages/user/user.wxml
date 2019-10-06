@@ -1,0 +1,6 @@
+<view class="container">
+  <view class="textContainer">
+  欢迎登陆灯控信息管理平台
+    <text class="textStyle">{{gets.toString}}</text>
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<!--pages/text/text.wxml-->
+<text>pages/text/text.wxml</text>
+
+<view>{{gets.username}}</view>

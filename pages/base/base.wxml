@@ -1,0 +1,3 @@
+<!--pages/base/base.wxml-->
+<view>基站的uid</view>
+<view>{{teacher}}</view>

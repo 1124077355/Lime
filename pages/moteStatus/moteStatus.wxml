@@ -1,0 +1,6 @@
+<!--pages/moteStatus/moteStatus.wxml-->
+<view>详情信息</view>
+<view>{{teacher}}</view>
+<!--<view class='moteStatus' wx:for='{{teacher.data.moteStatus}}' wx:for-index='key'>
+     <text>{{key}}:{{item}}</text>
+</view>-->

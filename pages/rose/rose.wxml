@@ -1,0 +1,19 @@
+<!--pages/rose/rose.wxml-->
+<view class='container'>
+  <ch-canvas canvasId='rose' id='rose'></ch-canvas>
+</view>
+<!--
+<form bindsubmit="doRegist">
+<view>
+<button type="submit" name="name" value="base">基站类表</button>
+<button type="submit" name="name" value="mote">中继类表</button>
+</view>
+</form>
+-->
+<view class="flex-wrp" style="flex-direction:column;">
+<view class="flex-item flex-item-V demo-text-1">
+<navigator url="../base/base" hover-class="navigator-hover"  >基站列表</navigator>
+<navigator url="../mote/mote" hover-class="navigator-hover" >中继列表</navigator>
+</view>
+</view>
+

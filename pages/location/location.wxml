@@ -1,0 +1,7 @@
+<scroll-view class="container" id="map" scroll-y="true">
+<view>
+ 
+</view>
+ <button bindtap="mapViewTap" style="margin:10px">查看地图</button>
+ <button bindtap="chooseMapViewTap" style="margin:10px">选择位置</button>
+</scroll-view>

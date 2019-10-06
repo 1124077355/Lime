@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/rose/rose",
+    "pages/user/user",
+    "pages/location/location",
+    "pages/login/login",
+    "pages/mote/mote",
+    "pages/base/base",
+    "pages/moteStatus/moteStatus",
+    "pages/text/text"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "灯控信息平台",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "tabBar": {
+    "color": "#a0a0a0",
+    "selectedColor": "#ec5c30",
+    "backgroundColor": "#f2f2f2",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/tab_home_def@2x.png",
+        "selectedIconPath": "images/tab_home_sel@2x.png"
+      },
+      {
+        "pagePath": "pages/rose/rose",
+        "text": "照明统计",
+        "iconPath": "images/tongji.png",
+        "selectedIconPath": "images/svg-.png"
+      },
+      {
+        "pagePath": "pages/location/location",
+        "text": "地图",
+        "iconPath": "images/ditu_1.png",
+        "selectedIconPath": "images/ditu.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我",
+        "iconPath": "images/tab_user_def@2x.png",
+        "selectedIconPath": "images/tab_user_sel@2x.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "debug": true
+}
