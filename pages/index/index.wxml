@@ -56,8 +56,10 @@
         <text>用户管理</text>
       </view>
       <view class="items">
+       <navigator url="../loginRecord/loginRecord" hover-class="navigator-hover">
         <image src="../../images/operation.png" class="service-icon"></image>
         <text>操作日记</text>
+        </navigator>
       </view>
       <view class="items">
         <image src="../../images/kaifakehu.png" class="service-icon"></image>

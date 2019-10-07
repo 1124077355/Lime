@@ -1,0 +1,22 @@
+<!--pages/loginRecord/loginRecord.wxml-->
+<view>
+<text decode="{{true}}">id&nbsp;</text>
+<text decode="{{true}}">userId&nbsp;</text>
+<text decode="{{true}}">userName&nbsp;</text>
+<text decode="{{true}}">Ip&nbsp;</text>
+<text decode="{{true}}">登陆状态&nbsp;</text>
+<text decode="{{true}}">时间戳&nbsp;</text>
+<text decode="{{true}}">类型&nbsp;</text>
+</view>
+<block wx:for="{{teacher}}">
+<view>
+<text bindtap="toVote">{{item.id}}</text>
+<text bindtap="toVote">{{item.userId}}</text>
+<text bindtap="toVote">{{item.userName}}</text>
+<text bindtap="toVote">{{item.loginIp}}</text>
+<text bindtap="toVote">{{item.loginTime}}</text>
+<text bindtap="toVote">{{item.operateContent}}</text>
+<text bindtap="toVote">{{item.operateType}}</text>
+</view> 
+</block>
+
