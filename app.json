@@ -8,7 +8,7 @@
     "pages/mote/mote",
     "pages/base/base",
     "pages/moteStatus/moteStatus",
-    "pages/loginRecord/oginRecord",
+    "pages/loginRecord/loginRecord",
     "pages/text/text"
   ],
   "window": {

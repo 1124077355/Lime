@@ -1,4 +1,4 @@
-// pages/loginRecord/oginRecord.js
+// pages/loginRecord/loginRecord.js
 Page({
 
   /**
@@ -12,7 +12,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    var serurl = getApp().serverUrl;
+    var turl = serurl + "loginRecordWeChat/find";
+    let self = this;
+    wx.request({
+      url: turl,     
+      header: {
+        'content-type': 'application/json'
+      },
+      success: (res) => {
+        console.log(res.data)
+        this.setData({ teacher: res.data });
+      }
+    })
   },
 
   /**
