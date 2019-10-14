@@ -44,7 +44,7 @@
       </view>
     </view>
   </view>
-  <view class="workbench">
+  <!-- <view class="workbench">
     <text class="title">服务</text>
     <view class="list">
       <view class="items">
@@ -66,5 +66,5 @@
         <text>开发人员</text>
       </view>
     </view>
-  </view>
+  </view> -->
 </view>
