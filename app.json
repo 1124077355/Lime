@@ -5,9 +5,8 @@
     "pages/user/user",
     "pages/location/location",
     "pages/login/login",
-    "pages/mote/mote",
+    "pages/motes/motes",
     "pages/base/base",
-    "pages/moteStatus/moteStatus",
     "pages/loginRecord/loginRecord",
     "pages/text/text"
   ],

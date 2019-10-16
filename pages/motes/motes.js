@@ -11,14 +11,29 @@ Page({
   // 页面加载
   onLoad: function () {
     var _this = this;
+    // if (!app._user.we.info.id || !app._user.we.info.name) {
+    //   _this.setData({
+    //     remind: '未绑定'
+    //   });
+    //   return false;
+    // }
+    // _this.setData({
+    //   id: app._user.we.info.id,
+    //   name: app._user.we.info.name
+    // });
     wx.request({
-      url: app.serverUrl + "baseWeChat/getApDetail",
+      url: app.serverUrl + "moteWeChat/getMoteStatus",
       method: 'GET',
+      // data: app.key({
+      //   openid: app._user.openid,
+      //   id: app._user.we.info.id
+      // }),
       success: function (res) {
-        if (res.data) {
+        console.log("000 " + res.data + " 111 " + res.data.status);
+        if (res.data ) {
           // 为每一个学年设置是否显示当前学年学费详情的标志open, false表示不显示
           var list = res.data.reverse();
-          console.log("000 "+list)
+          console.log("222 "+list)
           for (var i = 0, len = list.length; i < len; ++i) {
             list[i].open = false;
           }

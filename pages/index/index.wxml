@@ -1,5 +1,5 @@
 <view class="home-wrap">
-  <swiper indicator-dots="true" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
+  <swiper class="swiper" indicator-dots="true" autoplay="{{autoplay}}" duration="{{duration}}" interval="{{interval}}">
     <view wx:for="{{movies}}" wx:key="unique">
       <swiper-item>
         <view>
@@ -29,7 +29,7 @@
         </navigator>
       </view>
       <view class="items">
-      <navigator url="../mote/mote" hover-class="navigator-hover">
+      <navigator url="../motes/motes" hover-class="navigator-hover">
         <image src="../../images/zhongjizhan.png"></image>
         <text>中继管理</text>
         </navigator>

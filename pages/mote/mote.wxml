@@ -1,5 +1,0 @@
-<!--pages/mote/mote.wxml-->
-<view>中继的uid</view>
-<view>{{teacher}}</view>  
-<navigator url="../moteStatus/moteStatus"  hover-class="navigator-hover">查询中继详情</navigator>
-

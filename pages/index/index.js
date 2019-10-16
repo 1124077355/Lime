@@ -12,10 +12,10 @@ Page({
     txtAds: '开发中心，灯控信息管理平台',
     advertise: null,
     movies: [
-      { image: '/images_index/106.jpg', target: '', title:'123' },
-      { image: '/images_index/16fsdd.jpg', target: '', title: '123' },
-      { image: '/images_index/24sda.jpg', target: '', title: '123' },
-      { image: '/images_index/j3zh.jpg', target: '', title: '123' }
+      { image: '/images_index/dksys01.jpg', target: '', title:'123' },
+      { image: '/images_index/dksys02.png', target: '', title: '123' },
+      { image: '/images_index/dksys03.jpg', target: '', title: '123' },
+      { image: '/images_index/dksys04.jpg', target: '', title: '123' }
     ]
   },
   /*

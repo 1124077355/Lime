@@ -2,9 +2,14 @@
 .home-wrap{
   background: #f2f2f2;
 }
+.swiper{
+  display: block;
+  height: 250px;
+}
+
 .banner{
   width: 100%;
-  height: 300rpx;
+  height: 500rpx;
 }
 .scroll-txt{
   text-align: center;
@@ -28,7 +33,7 @@
 }
 .sub-banner{
   width: 100%;
-  height: 120px;
+  height: 100px;
 }
 
 .workbench{
@@ -59,8 +64,8 @@
   height: 100rpx;
 }
 .workbench .items image.service-icon{
-  width: 50rpx;
-  height: 50rpx;
+  width: 150rpx;
+  height: 150rpx;
 }
 .workbench .items text{
   display: block;

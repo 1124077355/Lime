@@ -13,10 +13,10 @@
         <!-- 中继查询标题 -->
         <view class="xf-title-wraper">
             <view class="xf-title-info">
-                <text class="xf-title">基站查询</text>
+                <text class="xf-title">中继查询</text>
                 <view class="xf-stu-info" wx:if="{{id && name}}">
-                    <text>基站id：{{id}}</text>
-                    <text>基站名字：{{name}}</text>
+                    <text>学号：{{id}}</text>
+                    <text>姓名：{{name}}</text>
                 </view>            
             </view> 
             <image class="xf-title-icon" src="/images/core/xf.png"></image>
@@ -33,35 +33,35 @@
                     <view class="xf-detail">
                         <view class="xf-detail-item">
                             <text class="xf-detail-label">基站主控ID</text>
-                            <text class="xf-detail-content">{{itemName.armid}}</text>
+                            <text class="xf-detail-content">{{itemName.maguid}}</text>
                         </view>
                         <view class="xf-detail-item">
-                            <text class="xf-detail-label">终端别名</text>
-                            <text class="xf-detail-content">{{itemName.alias}}</text>
+                            <text class="xf-detail-label">基站ID</text>
+                            <text class="xf-detail-content">{{itemName.apuid}}</text>
                         </view>
                         <view class="xf-detail-item">
-                            <text class="xf-detail-label">地址</text>
-                            <text class="xf-detail-content">{{itemName.addr}}</text>
+                            <text class="xf-detail-label">网络号</text>
+                            <text class="xf-detail-content">{{itemName.netid}}</text>
                         </view>
                         <view class="xf-detail-item xf-TotalTuition">
-                            <text class="xf-detail-label">企业名字</text>
-                            <text class="xf-detail-content">{{itemName.companyname}}</text>
+                            <text class="xf-detail-label">注册序号</text>
+                            <text class="xf-detail-content">{{itemName.regnumber}}</text>
                         </view>
                         <view class="xf-detail-item xf-MajorTuition">
-                            <text class="xf-detail-label">模块状态</text>
-                            <text class="xf-detail-content">{{itemName.modelstatus}}</text>
+                            <text class="xf-detail-label">注册原因</text>
+                            <text class="xf-detail-content">{{itemName.regreson}}</text>
                         </view>
                         <view class="xf-detail-item xf-GradeTuition">
-                            <text class="xf-detail-label">通信信道频点</text>
-                            <text class="xf-detail-content">{{itemName.comfreq}}</text>
+                            <text class="xf-detail-label">流量</text>
+                            <text class="xf-detail-content">{{itemName.flow}}</text>
                         </view>
                         <view class="xf-detail-item xf-SecMajorTuition">
-                            <text class="xf-detail-label">协议类型</text>
-                            <text class="xf-detail-content">{{itemName.protype}}</text>
+                            <text class="xf-detail-label">软件版本</text>
+                            <text class="xf-detail-content">{{itemName.softversion}}</text>
                         </view>
                         <view class="xf-detail-item xf-ApartmentPay">
-                            <text class="xf-detail-label">模块版块</text>
-                            <text class="xf-detail-content">{{itemName.modelversion}}</text>
+                            <text class="xf-detail-label">注册状态</text>
+                            <text class="xf-detail-content">{{itemName.status}}</text>
                         </view>
                         <view class="xf-detail-item xf-CollectingPay">
                             <text class="xf-detail-label">上行数据</text>
