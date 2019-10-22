@@ -1,19 +1,34 @@
-<!--pages/rose/rose.wxml-->
-<view class='container'>
-  <ch-canvas canvasId='rose' id='rose'></ch-canvas>
-</view>
-<!--
-<form bindsubmit="doRegist">
 <view>
-<button type="submit" name="name" value="base">基站类表</button>
-<button type="submit" name="name" value="mote">中继类表</button>
+    <view class="braodcast-list2">
+        <view class=".braodcast-item2">
+            <canvas canvas-id="failure_rate" disable-scroll="true" class="canvas canvas2"></canvas>
+        </view>
+        <view class=".braodcast-item2">
+            <canvas canvas-id="Lighting_rate" disable-scroll="true" class="canvas"></canvas>
+        </view>
+    </view>
+    <view class="braodcast-list">
+        <view class=".braodcast-item">
+            <text class=".braodcast-info">基站在线率</text>
+            <canvas class="canvas3" canvas-id="base_rate"></canvas>
+        </view>
+        <view class=".braodcast-item">
+            <text class=".braodcast-info">终端在线率</text>
+            <canvas class="canvas3" canvas-id="terminal_rate"></canvas>
+        </view>
+        <view class=".braodcast-item">
+            <text class=".braodcast-info">灯控器在线率</text>
+            <canvas class="canvas3" canvas-id="mote_rate"></canvas>
+        </view>
+    </view>
+    <view>
+        <view>
+            <text class=".braodcast-info">用电统计</text>
+            <canvas canvas-id="Electricity_statistics" disable-scroll="true" class="canvas"></canvas>
+        </view>
+        <view>
+            <text class=".braodcast-info">故障统计</text>
+            <canvas canvas-id="Fault_statistics" disable-scroll="true" class="canvas"></canvas>
+        </view>
+    </view>
 </view>
-</form>
--->
-<view class="flex-wrp" style="flex-direction:column;">
-<view class="flex-item flex-item-V demo-text-1">
-<navigator url="../base/base" hover-class="navigator-hover"  >基站列表</navigator>
-<navigator url="../mote/mote" hover-class="navigator-hover" >中继列表</navigator>
-</view>
-</view>
-
