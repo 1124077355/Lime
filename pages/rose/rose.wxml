@@ -1,11 +1,7 @@
 <view>
     <view class="braodcast-list2">
-        <view class=".braodcast-item2">
-            <canvas canvas-id="failure_rate" disable-scroll="true" class="canvas canvas2"></canvas>
-        </view>
-        <view class=".braodcast-item2">
-            <canvas canvas-id="Lighting_rate" disable-scroll="true" class="canvas"></canvas>
-        </view>
+        <canvas canvas-id="failure_rate" disable-scroll="true" class="canvas2"></canvas>
+        <canvas canvas-id="Lighting_rate" disable-scroll="true" class="canvas2"></canvas>
     </view>
     <view class="braodcast-list">
         <view class=".braodcast-item">

@@ -2,9 +2,6 @@ const wxCharts = require("../../utils/wxcharts.js");
 var windowW = 0;
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
   },
 
@@ -20,8 +17,15 @@ Page({
     console.log(this.data.imageWidth);
 
     //计算屏幕宽度比列
-    windowW = this.data.imageWidth / 375;
-    console.log(windowW);
+    //windowW = this.data.imageWidth / 375;
+    windowW = this.data.imageWidth;
+
+    /*wx.getSystemInfo({
+      success: function(res) {
+        console.log(res.windowWidth);
+        console.log(res.windowHeight);
+      },
+    })*/
 
   },
 
@@ -37,29 +41,29 @@ Page({
       series: [
         {
           name: "已完成",
-          data: 60,
+          data: 80,
           //color: '#ff6600'
         },
         {
           name: "未完成",
-          data: 100 - 60,
+          data: 100 - 80,
           color: '#eeeeee'
         }
       ],
-      width: 100,
-      height: 100,
+      width: (windowW / 3),
+      height: (windowW / 3),
       dataLabel: false,
       legend: false,
       title: { // 显示百分比
-        name: 60 + '%',
-        color: '#333333',
+        name: 80 + '%',
+        color: '#7cb5ec',
         fontSize: 14
       },
       extra: {
         pie: {
           offsetAngle: -90
         },
-        ringWidth: 6,
+        ringWidth: 13,
       }
     });
 
@@ -79,20 +83,20 @@ Page({
           color: '#eeeeee'
         }
       ],
-      width: 100,
-      height: 100,
+      width: (windowW/3),
+      height: (windowW/3),
       dataLabel: false,
       legend: false,
       title: { // 显示百分比
         name: 80 + '%',
-        color: '#333333',
+        color: '#7cb5ec',
         fontSize: 14
       },
       extra: {
         pie: {
           offsetAngle: -90
         },
-        ringWidth: 6,
+        ringWidth: 13,
       }
     });
 
@@ -103,29 +107,29 @@ Page({
       series: [
         {
           name: "已完成",
-          data: 70,
+          data: 80,
           //color: '#ff6600'
         },
         {
           name: "未完成",
-          data: 100 - 70,
+          data: 100 - 80,
           color: '#eeeeee'
         }
       ],
-      width: 100,
-      height: 100,
+      width: (windowW / 3),
+      height: (windowW / 3),
       dataLabel: false,
       legend: false,
       title: { // 显示百分比
-        name: 70 + '%',
-        color: '#333333',
+        name: 80 + '%',
+        color: '#7cb5ec',
         fontSize: 14
       },
       extra: {
         pie: {
           offsetAngle: -90
         },
-        ringWidth: 6,
+        ringWidth: 13,
       }
     });
 
@@ -138,7 +142,7 @@ Page({
         pie: {
           offsetAngle: -90
         },
-        ringWidth: 10,
+        ringWidth: 17,
       },
       title: {
         name: '70%',
@@ -162,8 +166,8 @@ Page({
           color: '#eeeeee'
         }
       ],
-      width: (200 * windowW),
-      height: (200 * windowW),
+      width: (windowW/2),
+      height: (windowW/2),
       dataLabel: false,
       legend: false,
       padding: 0
@@ -178,7 +182,7 @@ Page({
         pie: {
           offsetAngle: -90
         },
-        ringWidth: 10,
+        ringWidth: 17,
       },
       title: {
         name: '70%',
@@ -202,8 +206,8 @@ Page({
           color: '#eeeeee'
         }
       ],
-      width: (200 * windowW),
-      height: (200 * windowW),
+      width: (windowW/2),
+      height: (windowW/2),
       dataLabel: false,
       legend: false,
       padding: 0
